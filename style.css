@@ -1,0 +1,170 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    
+    background-color: black;
+}
+.header,
+.footer {
+    background-color: rgb(67, 64, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    font-size: 32px;
+    font-family: 'Cabin Sketch', cursive;  
+}
+
+.black {
+    font-size: 12px;
+}
+
+.shader {
+    background-color: black;
+    opacity: .1;
+}
+
+.clear {
+    background-color: white;
+}
+
+.rainbow {
+    background-color: blue;
+}
+
+.header {
+    margin-bottom: 64px;
+}
+.footer {
+    bottom: 0%;
+    position: fixed;
+    margin-top: 0;
+    
+    
+}
+.case {
+    
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(175, 175, 240);
+    padding: 32px;
+    align-items: center;
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+    
+    
+    
+}
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    gap: 32px;
+    
+}
+
+
+#container {
+    display: grid;
+    width:544px;
+    height: 544px;
+    background-color: white;
+    
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.finished {
+    background-color: black;
+    
+}
+.dropdown-content #hundred:hover, #sixtyFour:hover, #thirtySix:hover, #sixteen:hover {
+background-color: green;
+}
+
+button {
+    background-color: rgb(64, 133, 224);
+    max-width: max-content;
+    height: auto;
+    font-size: 16px;
+    padding: 16px;
+    border-radius: 15px;
+    font-family: 'Cabin Sketch', cursive;
+}
+  
+.grid-item {
+    /*padding: 1em;*/
+    /*border: 1px solid #ddd;*/
+    width: 544px;
+    height: 544px;
+}
+
+/*.grid-item:hover {
+    background-color: blue;
+}*/
+
+  /* Dropdown Button */
+.dropbtn {
+    background-color: rgb(64, 133, 224);
+    padding: 16px;
+    font-size: 16px;
+    padding: 16px;
+    border-radius: 15px;
+    font-family: 'Cabin Sketch', cursive;
+    border-style: solid;
+    border-top-color: white;
+    border-left-color: white;
+    border-bottom-color: grey;
+    border-right-color: grey;
+    
+}
+  
+  /* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+  
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 110px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 15px;
+    
+}
+  
+  /* Links inside the dropdown */
+.dropdown-content div {
+    color: black;
+    padding: 3px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 15px;
+}
+  
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
